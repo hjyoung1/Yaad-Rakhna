@@ -1,0 +1,142 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "आइटम लोकेटर",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "रद्द करो",
+            "बंद करो",
+            "रोक दो"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "मदद करो",
+            "मदद",
+            "सहायता",
+            "सहायता करो",
+            "क्या आप मेरी मदद कर सकते हैं"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "रुको",
+            "बंद करो"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "StoreItemIntent",
+          "slots": [],
+          "samples": [
+            "याद रखना",
+            "याद रखो",
+            "मुझे याद दिलाना",
+            "कुछ याद रखो",
+            "क्या आप कुछ याद रख सकते हैं"
+          ]
+        },
+        {
+          "name": "RetrieveItemIntent",
+          "slots": [],
+          "samples": [
+            "तुम्हें याद है",
+            "क्या तुम्हें याद है",
+            "तुम्हे याद है क्या",
+            "क्या तुम्हे याद है",
+            "तुम्हें कुछ याद है"
+          ]
+        },
+        {
+          "name": "ItemNameIntent",
+          "slots": [
+            {
+              "name": "ItemName",
+              "type": "AMAZON.Thing"
+            }
+          ],
+          "samples": [
+            "{ItemName}",
+            "मेरा {ItemName}",
+            "{ItemName} का नाम है"
+          ]
+        },
+        {
+          "name": "ItemLocationIntent",
+          "slots": [
+            {
+              "name": "ItemLocation",
+              "type": "AMAZON.Room"
+            }
+          ],
+          "samples": [
+            "{ItemLocation}",
+            "{ItemLocation} में",
+            "{ItemLocation} पर",
+            "{ItemLocation} के पास"
+          ]
+        },
+        {
+          "name": "DirectStoreIntent",
+          "slots": [
+            {
+              "name": "ItemName",
+              "type": "AMAZON.Thing"
+            },
+            {
+              "name": "ItemLocation",
+              "type": "AMAZON.Room"
+            }
+          ],
+          "samples": [
+            "मैंने {ItemName} {ItemLocation} में रखा है",
+            "मैंने {ItemName} {ItemLocation} पर रखा है",
+            "{ItemName} {ItemLocation} में है",
+            "{ItemName} {ItemLocation} पर है",
+            "मैंने {ItemName} {ItemLocation} में रखा है याद रखना",
+            "{ItemName} {ItemLocation} में रखा है याद रखना",
+            "मेरा {ItemName} {ItemLocation} में है",
+            "{ItemName} को {ItemLocation} में रखा है",
+            "{ItemName} {ItemLocation} में रखी है",
+            "{ItemName} {ItemLocation} पर रखी है"
+          ]
+        },
+        {
+          "name": "DirectRetrieveIntent",
+          "slots": [
+            {
+              "name": "ItemName",
+              "type": "AMAZON.Thing"
+            }
+          ],
+          "samples": [
+            "मैंने {ItemName} कहां रखा था",
+            "{ItemName} कहां है",
+            "{ItemName} कहां रखा है",
+            "मेरा {ItemName} कहां है",
+            "मेरा {ItemName} कहां रखा है",
+            "{ItemName} कहां गया",
+            "{ItemName} कहा है"
+          ]
+        }
+      ],
+      "types": [],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "HIGH"
+        }
+      }
+    }
+  }
+}
