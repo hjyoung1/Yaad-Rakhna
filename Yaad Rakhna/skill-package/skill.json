@@ -1,0 +1,55 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "hi-IN": {
+          "summary": "अपनी चीजें कहाँ रखी है, उन्हें याद रखने में मदद करे",
+          "examplePhrases": [
+            "Alexa, याद रखना",
+            "Alexa, तुम्हें याद है",
+            "Alexa, मैंने चाबी मेज पर रखी है"
+          ],
+          "keywords": [
+            "याद रखना",
+            "खोजना",
+            "स्टोरेज",
+            "स्मरण"
+          ],
+          "name": "Hindi Item Locator",
+          "description": "Hindi Item Locator आपको यह याद रखने में मदद करता है कि आपने कोई वस्तु कहां रखी है। आप बस कहें \"याद रखना\" और Alexa आपसे वस्तु और उसके स्थान के बारे में पूछेगा। बाद में, आप पूछ सकते हैं \"तुम्हें याद है\" या सीधे पूछें \"मैंने चाबी कहां रखी थी?\""
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "No special testing instructions.",
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "ask-custom-hindi-item-locator-default"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::personal_info:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "hi-IN": {
+          "privacyPolicyUrl": "https://example.com/privacy-policy",
+          "termsOfUseUrl": "https://example.com/terms-of-use"
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": true
+    }
+  }
+}
